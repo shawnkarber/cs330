@@ -122,10 +122,10 @@ By \ref{AimpliesR}, we have $r \lor \lnot t$. By \ref{HimpAandK}, we have $\lnot
 
 \indent Solution:\\
 \begin{align*}
-N \to L \oplus N \equiv \lnot N \lor [L \oplus N]\\ 
+N \to L \oplus N \equiv \lnot N \lor [L \oplus N] && \text{[Logical equivalences Involving Implications]}\\ 
 \end{align*}
 \begin{align*}
-L \oplus N \to N \equiv \lnot [L \oplus N] \lor N \\
+L \oplus N \to N \equiv \lnot [L \oplus N] \lor N &&  \text{[Logical equivalences Involving Implications]} \\
 \end{align*}
 
 \begin{center}
@@ -184,12 +184,13 @@ F & F & F & T & T
 \indent (b) Deduction\\
 \begin{align}
 \label{pImpqAndpImpr}
-[p \to q] \land [p \to r] \equiv [\lnot p \lor q] \land [\lnot p \lor r] \equiv \lnot p \lor [q \land r] 
+[p \to q] \land [p \to r] &\equiv [\lnot p \lor q] \land [\lnot p \lor r]  && \text{[Logical equivalences Involving Implications]}\\
+                          &\equiv \lnot p \lor [q \land r] && \text{[Distributive law]} 
 \end{align}
 
 \begin{align}
 \label{pImpqAndr}
-p \to [q \land r] \equiv \lnot p \lor [q\land r]
+p \to [q \land r] \equiv \lnot p \lor [q\land r] && \text{[Logical equivalences Involving Implications]}
 \end{align}
 
 By \ref{pImpqAndpImpr} and \ref{pImpqAndr}, we know that they are logically equivalent.
@@ -212,11 +213,22 @@ F & F & T & T
 
 \indent We have known that AND, OR, and NOT are functionally complete. If we want to prove that NOR is functionally complete, we can express AND, OR, or NOT using NOR.\\
 
-\begin{align*}
-p \land q &= \lnot [\lnot p \lor \lnot q] \\
-          &= \lnot p \text{ NOR } \lnot q \\
-          &= [p \text{ NOR } p] \text{ NOR } [q \text{ NOR } q] \\
-\end{align*}
+\begin{align}
+\lnot p & \equiv \lnot [p \lor p] && \text{[Idempotent laws]}\\
+        \label{NOTpEqpNORp}
+        & \equiv p \text{ NOR } p && \text{[Definition of NOR]}
+\end{align}
+
+\begin{align}
+p \lor q & \equiv \lnot p \text{ NOR } q && \text{[Definition of NOR]} \\
+         & \equiv [p \text{ NOR } q] \text{[ NOR ]} [p \text{ NOR } q] && \text{By \ref{NOTpEqpNORp}}\\
+        & \equiv p \text{ NOR } q && \text{[Definition of NOR]}
+\end{align}
+\begin{align}
+p \land q & \equiv \lnot [\lnot p \lor \lnot q] && \text{[De Morgan's Law]} \\
+          & \equiv \lnot p \text{ NOR } \lnot q && \text{[Definition of NOR]}\\
+          & \equiv [p \text{ NOR } p] \text{ NOR } [q \text{ NOR } q] &&       \text{By \ref{NOTpEqpNORp}} 
+\end{align}
 
 \indent So we know how to express AND using NOR. Because AND is functionally complete, NOR is functionally complete as well. \\
 
