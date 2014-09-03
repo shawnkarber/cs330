@@ -73,13 +73,14 @@ T & T & T & T & T \\
 \end{enumerate}
 
 By \ref{JasAndSam} we have known that if \ref{Jas} and \ref{Sam} are both true, then Jasmine will not be happy. So if one of them is false, Jasmine will be happy. If \ref{Jas} is false, then from \ref{NotJasNotKan}, we know that \ref{Kan}  is false. So we can only invite Samir. But by \ref{SamImpKan}, since Kanti will not be there, Samir will not be there either, i.e, \ref{Sam}  is false. The result is none of three will attend. If Samir does not attend the party, i.e, \ref{Sam} is false, we can make \ref{Jas}  or \ref{Kan} true. By \ref{NotJasNotKan}, we know that if \ref{Kan} is true, then \ref{Jas} is true. And no one is unhappy. So we can invite Jasmine, Kanti or both of them.  
+\newline
 
 7. Rosen, Section 1.2: Exercise 24
 
 \indent Solution:\\
 \begin{enumerate}
 \item \label{precon1} Only one of them is the knight, one of them is the knave and one of them is the spy.
-\item \label{Cknave} $p \to \not r$: C is the knave.
+\item \label{Cknave} $p \to \lnot r$: C is the knave.
 \item \label{Aknight} $q \to p$: A is the knight.
 \item \label{Cspy} $r \to ((p \land \lnot q) \lor (q \land \lnot p))$: C is the spy.
 \item \label{Atrue} $p$: A tells the truth.
@@ -87,7 +88,11 @@ By \ref{JasAndSam} we have known that if \ref{Jas} and \ref{Sam} are both true, 
 \item \label{Ctrue} $r$: C tells the truth.
 \end{enumerate}
 
-By \ref{precon1}, we know that at least of them tells the true, so we can assume that one of \ref{Cknave}, \ref{Aknight} and \ref{Cspy} is true. Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight and \ref{Btrue} is true, which contradicts with \ref{Aknight}. The result is A is the knight, B is the spy and C is the knave.  Assume that \ref{Aknight} is true, we know that A is the knight and B is the spy. So C is the knave. The result does not contradict with \ref{precon1}.  Assume that \ref{Cspy} is true, we know that C is the spy. So \ref{Cknave} is false. By \ref{precon1}, we know that A is the knave and B is the knight, so \ref{Aknight} is true, which contradicts with the fact that A is the knave.  So we know that A is the knight, B is the spy and C is the knave.
+By \ref{precon1}, we know that at least of them tells the true, so we can assume that one of \ref{Cknave}, \ref{Aknight} and \ref{Cspy} is true.\\
+Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight and \ref{Btrue} is true, which contradicts with \ref{Aknight}. The result is A is the knight, B is the spy and C is the knave.\\ 
+Assume that \ref{Aknight} is true, we know that A is the knight and B is the spy. So C is the knave. The result does not contradict with \ref{precon1}.\\
+Assume that \ref{Cspy} is true, we know that C is the spy. So \ref{Cknave} is false. By \ref{precon1}, we know that A is the knave and B is the knight, so \ref{Aknight} is true, which contradicts with the fact that A is the knave.\\
+So we know that A is the knight, B is the spy and C is the knave.
 
 8. Rosen, Section 1.2: Exercise 34
 
@@ -105,8 +110,12 @@ By \ref{precon1}, we know that at least of them tells the true, so we can assume
 \item \label{HimpAandK} $q \to t \land p$
 \end{enumerate}
 
-By \ref{AimpliesR}, we have $r \lor \lnot t$. By \ref{HimpAandK}, we have $\lnot q \lor (p \land t)$.  By \ref{AimpliesR}, we know that $t$ is false or $r$ is true, so we assume that $t$ is false. Here we get $t \land p$ is false.  By \ref{HimpAandK}, we know that $q$ is false. By \ref{KorH},$p$ is true, so $\lnot p \land \lnot s$ is false. By \ref{VandJ}, we know that $s$ is true, so $r \land \lnot s$ is false. By \ref{RxorV}, $\lnot r$ is true. So we have Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not
-chatting. We can also assume that $r$ is true. The $\lnot r \land s$ is false. By \ref{RxorV}, $\lnot s$ is true. So $p \land s$ is false. By \ref{VandJ}, $\lnot p$ is true, so $p$ is false. As a result, $t \land p$ is false, and by \ref{HimpAandK}, $q$ is false. So $p$ and $q$ are false, which contradicts with \ref{KorH}. The assumption is wrong. According to the above inference, we have that Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.
+By \ref{AimpliesR}, we have $r \lor \lnot t$. By \ref{HimpAandK}, we have $\lnot q \lor (p \land t)$.\\
+By \ref{AimpliesR}, we know that $t$ is false or $r$ is true. \\ 
+So we assume that $t$ is false. Here we get $t \land p$ is false. By \ref{HimpAandK}, we know that $q$ is false. By \ref{KorH}, $p$ is true, so $\lnot p \land \lnot s$ is false. By \ref{VandJ}, we know that $s$ is true, so $r \land \lnot s$ is false. By \ref{RxorV}, $\lnot r$ is true. So we have Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.\\ 
+We can also assume that $r$ is true. The $\lnot r \land s$ is false. By \ref{RxorV}, $\lnot s$ is true. So $p \land s$ is false. By \ref{VandJ}, $\lnot p$ is true, so $p$ is false. As a result, $t \land p$ is false, and by \ref{HimpAandK}, $q$ is false. So $p$ and $q$ are false, which contradicts with \ref{KorH}. The assumption is wrong.\\
+According to the above inference, we have that Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.
+\newline
 
 9. 
 
@@ -130,6 +139,7 @@ F & F & F & T & T
 \end{center}
 
 By the truth table, we know that when $L$ is false and $N$ is true the direction out of Paradox is the North if and only if $L \oplus N$ is true. So $L$ is false, which means that Bill is not a liar.
+\newline
 
 10. Rosen, Section 1.3: Exercise 26 Use truth tables
 
@@ -173,12 +183,12 @@ F & F & F & T & T
 \indent (b) Deduction\\
 \begin{align}
 \label{pImpqAndpImpr}
-[p \to q] \land [p \to r] \equiv [\lnot p \lor q] \land [\lnot p \lor r] \equiv \lnot p \lor [q \land r] \\
+[p \to q] \land [p \to r] \equiv [\lnot p \lor q] \land [\lnot p \lor r] \equiv \lnot p \lor [q \land r] 
 \end{align}
 
 \begin{align}
 \label{pImpqAndr}
-p \to [q \land r] \equiv \lnot p \lor [q\land r]\\
+p \to [q \land r] \equiv \lnot p \lor [q\land r]
 \end{align}
 
 By \ref{pImpqAndpImpr} and \ref{pImpqAndr}, we know that they are logically equivalent.
