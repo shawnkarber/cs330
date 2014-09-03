@@ -89,8 +89,8 @@ By \ref{JasAndSam} we have known that if \ref{Jas} and \ref{Sam} are both true, 
 \end{enumerate}
 
 By \ref{precon1}, we know that at least of them tells the true, so we can assume that one of \ref{Cknave}, \ref{Aknight} and \ref{Cspy} is true.\\
-\indent Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight and \ref{Btrue} is true, which contradicts with \ref{Aknight}. The result is A is the knight, B is the spy and C is the knave.\\ 
-\indent Assume that \ref{Aknight} is true, we know that A is the knight and B is the spy. So C is the knave. The result does not contradict with \ref{precon1}.\\
+\indent Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight, \ref{Btrue} and \ref{Aknight} are true; B and A are knights contradicts with \ref{precon1}. The result is A is the knight, B is the spy and C is the knave.\\ 
+\indent Assume that \ref{Aknight} is true, we know that A is the knight and C is the knave. Based on the \ref{precon1}, we can conclude that B is the spy. The result does not contradict with \ref{precon1}.\\
 \indent Assume that \ref{Cspy} is true, we know that C is the spy. So \ref{Cknave} is false. By \ref{precon1}, we know that A is the knave and B is the knight, so \ref{Aknight} is true, which contradicts with the fact that A is the knave.\\
 \indent So we know that A is the knight, B is the spy and C is the knave.
 \newline
