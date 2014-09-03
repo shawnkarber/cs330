@@ -220,10 +220,10 @@ F & F & T & T
 \end{align}
 
 \begin{align}
-p \lor q & \equiv \lnot p \text{ NOR } q && \text{[Definition of NOR]} \\
-         & \equiv [p \text{ NOR } q] \text{[ NOR ]} [p \text{ NOR } q] && \text{By \ref{NOTpEqpNORp}}\\
-        & \equiv p \text{ NOR } q && \text{[Definition of NOR]}
+p \lor q & \equiv \lnot [p \text{ NOR } q] && \text{[Definition of NOR]} \\
+         & \equiv [p \text{ NOR } q] \text{ NOR } [p \text{ NOR } q] && \text{By \ref{NOTpEqpNORp}}\\
 \end{align}
+
 \begin{align}
 p \land q & \equiv \lnot [\lnot p \lor \lnot q] && \text{[De Morgan's Law]} \\
           & \equiv \lnot p \text{ NOR } \lnot q && \text{[Definition of NOR]}\\
