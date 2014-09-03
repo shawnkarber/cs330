@@ -9,7 +9,68 @@
 \begin{document}
 \maketitle
 
+1. Rosen, Section 1.1: Exercise 10 (b) (d) (h)
 
+\indent Solution:\\
+\indent $p$: The election is decided\\
+\indent $q$: The votes have been counted\\
+\indent (b) The election is decided or the votes have been counted.\\
+\indent (d) The votes have counted implies that the election is decided.\\
+\indent (h) The votes have not been counted, or the election is not decided and the votes have been counted.\\
+\newline
 
+2. Rosen, Section 1.1: Exercise 12 (c) (e)
+
+\indent Solution:\\
+\indent $p$: You have the flu.\\
+\indent $q$: You miss the final exam.\\
+\indent $r$: You pass the course.\\
+\indent (c) You miss the final exam implies that you don’t pass the course.\\
+\indent (e) You have the flu implies that you don’t pass the course, or you miss the exam implies that you don’t pass the course. \\
+\newline
+
+3. Rosen, Section 1.1: Exercise 24 (b) (h)
+
+\indent Solution:\\
+\indent (b) If you were born in the United States, you are to be a citizen of this country.\\
+\indent (h) If you don’t begin your climb too late, you will reach the summit.\\
+\newline
+
+4. Rosen, Section 1.1: Exercise 28 (b)
+
+\indent Solution:\\
+\indent Converse: If I go to the beach, then it is a sunny summer day.\\
+\indent 1Inverse: If it is not a sunny summer day, then I don’t go to the beach.\\
+\indent Contrapositive: If I don’t go to the beach, then it is not a summer sunny day.\\
+\newline
+
+5. Rosen, Section 1.1: Exercise 34 (f)
+
+\indent Solution:\\
+\indent Truth Table:\\
+\begin{center}
+\begin{tabular}{c|c|c|c|c}
+    $p$ & $q$ & $p \lplus q$ & $p \lplus \lnot q$ & $ (p \plus q) \land (p \plus \lnot q) $ \\
+\hline
+F & F & T & T & T \\
+F & T & F & F & F \\
+T & F & F & F & F \\
+T & T & T & T & T \\
+\end{tabular}
+\end{center}
+
+6. Rosen, Section 1.2: Exercise 18 
+
+Solution:
+\begin{enumerate}
+\item \label{Jas} $p$: Jasmine attends the party.
+\item \label{Sam} $q$: Samir attends the party.
+\item \label{Kan} $r$: Kanti attends the party.
+\item \label{JasAndSam} $p \land q$ \to Jasmine will not be happy. If Jasmine and Samir attend the party, Jasmine will become unhappy.
+\item \label{SamImpKan} $q \to r$: If Samir will attend, then Kanti will be there.
+\item \label{NotJasNotKan} $\lnot p \lto \lnot r$: If Jasmine does not attend, then Kanti will not attend.
+\end{enumerate}
+
+By \ref{JasAndSam} we have known that if \ref{Jas} and \ref{Sam} are both true, then Jasmine will not be happy. So if one of them is false, Jasmine will be happy. If \ref{Jas} is false, then from \ref{NotJasNotKan}, we know that \ref{Kan}  is false. So we can only invite Samir. But by \ref{SamImpKan}, since Kanti will not be there, Samir will not be there either, i.e, \ref{Sam}  is false. The result is none of three will attend. If Samir does not attend the party, i.e, \ref{Sam} is false, we can make \ref{Jas}  or \ref{Kan} true. By \ref{NotJasNotKan}, we know that if \ref{Kan} is true, then \ref{Jas} is true. And no one is unhappy. So we can invite Jasmine, Kanti or both of them.  
 
 \end{document}
