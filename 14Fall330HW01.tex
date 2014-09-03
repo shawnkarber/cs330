@@ -3,10 +3,10 @@
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{geometry}
+%\usepackage{geometry}
 
 \title{Com S 330 HW01}
-\author{Siyu Lin\\ \url{siyul@iastate.edu}}
+\author{Siyu Lin \texttt{siyul@iastate.edu}}
 \begin{document}
 \maketitle
 
@@ -41,8 +41,8 @@
 
 \indent Solution:\\
 \indent Converse: If I go to the beach, then it is a sunny summer day.\\
-\indent 1Inverse: If it is not a sunny summer day, then I don’t go to the beach.\\
-\indent Contrapositive: If I don’t go to the beach, then it is not a summer sunny day.\\
+\indent Inverse: If it is not a sunny summer day, then I do not go to the beach.\\
+\indent Contrapositive: If I do not go to the beach, then it is not a summer sunny day.\\
 \newline
 
 5. Rosen, Section 1.1: Exercise 34 (f)
@@ -89,10 +89,11 @@ By \ref{JasAndSam} we have known that if \ref{Jas} and \ref{Sam} are both true, 
 \end{enumerate}
 
 By \ref{precon1}, we know that at least of them tells the true, so we can assume that one of \ref{Cknave}, \ref{Aknight} and \ref{Cspy} is true.\\
-Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight and \ref{Btrue} is true, which contradicts with \ref{Aknight}. The result is A is the knight, B is the spy and C is the knave.\\ 
-Assume that \ref{Aknight} is true, we know that A is the knight and B is the spy. So C is the knave. The result does not contradict with \ref{precon1}.\\
-Assume that \ref{Cspy} is true, we know that C is the spy. So \ref{Cknave} is false. By \ref{precon1}, we know that A is the knave and B is the knight, so \ref{Aknight} is true, which contradicts with the fact that A is the knave.\\
-So we know that A is the knight, B is the spy and C is the knave.
+\indent Assume that \ref{Cknave} is true, we know that \ref{Ctrue} is false, and A is either the knight or the spy and C is the knave. And by \ref{precon1}, we know that A is not the spy. Because if A is the spy, then B is the knight and \ref{Btrue} is true, which contradicts with \ref{Aknight}. The result is A is the knight, B is the spy and C is the knave.\\ 
+\indent Assume that \ref{Aknight} is true, we know that A is the knight and B is the spy. So C is the knave. The result does not contradict with \ref{precon1}.\\
+\indent Assume that \ref{Cspy} is true, we know that C is the spy. So \ref{Cknave} is false. By \ref{precon1}, we know that A is the knave and B is the knight, so \ref{Aknight} is true, which contradicts with the fact that A is the knave.\\
+\indent So we know that A is the knight, B is the spy and C is the knave.
+\newline
 
 8. Rosen, Section 1.2: Exercise 34
 
@@ -111,10 +112,10 @@ So we know that A is the knight, B is the spy and C is the knave.
 \end{enumerate}
 
 By \ref{AimpliesR}, we have $r \lor \lnot t$. By \ref{HimpAandK}, we have $\lnot q \lor (p \land t)$.\\
-By \ref{AimpliesR}, we know that $t$ is false or $r$ is true. \\ 
-So we assume that $t$ is false. Here we get $t \land p$ is false. By \ref{HimpAandK}, we know that $q$ is false. By \ref{KorH}, $p$ is true, so $\lnot p \land \lnot s$ is false. By \ref{VandJ}, we know that $s$ is true, so $r \land \lnot s$ is false. By \ref{RxorV}, $\lnot r$ is true. So we have Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.\\ 
-We can also assume that $r$ is true. The $\lnot r \land s$ is false. By \ref{RxorV}, $\lnot s$ is true. So $p \land s$ is false. By \ref{VandJ}, $\lnot p$ is true, so $p$ is false. As a result, $t \land p$ is false, and by \ref{HimpAandK}, $q$ is false. So $p$ and $q$ are false, which contradicts with \ref{KorH}. The assumption is wrong.\\
-According to the above inference, we have that Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.
+\indent By \ref{AimpliesR}, we know that $t$ is false or $r$ is true. \\ 
+\indent So we assume that $t$ is false. Here we get $t \land p$ is false. By \ref{HimpAandK}, we know that $q$ is false. By \ref{KorH}, $p$ is true, so $\lnot p \land \lnot s$ is false. By \ref{VandJ}, we know that $s$ is true, so $r \land \lnot s$ is false. By \ref{RxorV}, $\lnot r$ is true. So we have Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.\\ 
+\indent We can also assume that $r$ is true. The $\lnot r \land s$ is false. By \ref{RxorV}, $\lnot s$ is true. So $p \land s$ is false. By \ref{VandJ}, $\lnot p$ is true, so $p$ is false. As a result, $t \land p$ is false, and by \ref{HimpAandK}, $q$ is false. So $p$ and $q$ are false, which contradicts with \ref{KorH}. The assumption is wrong.\\
+\indent According to the above inference, we have that Kevin is chatting, Heather is not chatting, Randy is not chatting, Vijay is chatting and Abby is not chatting.
 \newline
 
 9. 
@@ -148,7 +149,7 @@ By the truth table, we know that when $L$ is false and $N$ is true the direction
 
 \begin{center}
 \begin{tabular}{c|c|c|c|c}
-    $p$ & $q$ & $r$ & $\lnot p \to q \to r$ & $q \to p \lor r$ \\
+    $p$ & $q$ & $r$ & $\lnot p \to (q \to r)$ & $q \to (p \lor r)$ \\
 \hline
 T & T & T & T & T\\
 T & T & F & T & T\\
@@ -192,6 +193,7 @@ p \to [q \land r] \equiv \lnot p \lor [q\land r]
 \end{align}
 
 By \ref{pImpqAndpImpr} and \ref{pImpqAndr}, we know that they are logically equivalent.
+\newline
 
 12. 
 
@@ -199,7 +201,7 @@ By \ref{pImpqAndpImpr} and \ref{pImpqAndr}, we know that they are logically equi
 \indent Truth table:\\
 \begin{center}
 \begin{tabular}{c|c|c|c}
-    $p$ & $q$ & $p $NOR$ q$ & $\lnot (p \lor q)$ \\
+    $p$ & $q$ & $p $ NOR $ q$ & $\lnot (p \lor q)$ \\
 \hline
 T & T & F & F\\
 T & F & F & F\\
@@ -207,5 +209,16 @@ F & T & F & F\\
 F & F & T & T
 \end{tabular}
 \end{center}
+
+\indent We have known that AND, OR, and NOT are functionally complete. If we want to prove that NOR is functionally complete, we can express AND, OR, or NOT using NOR.\\
+
+\begin{align*}
+p \land q &= \lnot [\lnot p \lor \lnot q] \\
+          &= \lnot p \text{ NOR } \lnot q \\
+          &= [p \text{ NOR } p] \text{ NOR } [q \text{ NOR } q] \\
+\end{align*}
+
+\indent So we know how to express AND using NOR. Because AND is functionally complete, NOR is functionally complete as well. \\
+
 
 \end{document}
