@@ -11,22 +11,66 @@
 \maketitle
 
 \begin{enumerate}
-\item Rosen, Section 1.4: Exercise 10 (a) (b) (d)
-\item Rosen, Section 1.4: Exercise 14 (a) (d)
-\item Rosen, Section 1.4: Exercise 24 (a) (c)
-\item Rosen, Section 1.4: Exercise 46 (b)
+\item Rosen, Section 1.4: Exercise 10 (a) (b) (d)\\
+Let $C(x)$ be the statement ``x has a cat,'' let $D(x)$ be the statement ``$x$ has a dog,'' and let $F(x)$ be the statement ``x has a ferret.'' Express each of these statements in terms of $C(x)$,$D(x)$, $F(x)$, quantifiers, and logical connectives. Let the domain consist of all students in your class.\\
+a) A student in your class has a cat, a dog, and a ferret.\\
+b) All students in your class have a cat, a dog, or a ferret.\\
+d) No student in your class has a cat, a dog, and a ferret.\\
+%Let $F(x, y)$ be the statement “$x$ can fool $y$,” where the domain consists of all people in the world. Use quantifiers to express each of these statements.
+%a) Everybody can fool Fred.
+%b) Evelyn can fool everybody.
+%d) There is no one who can fool everybody.
+\item Rosen, Section 1.4: Exercise 14 (a) (d)\\
+%Use quantifiers and predicates with more than one vari- able to express these statements.
+%a) ThereisastudentinthisclasswhocanspeakHindi.
+%d) All students in this class have learned at least one pro- gramming language.
+Determine the truth value of each of these statements if
+the domain consists of all real numbers.\\
+a) $\exists x (x^3 = -1)$\\
+d) $\forall x (2x > x)$\\
+\item Rosen, Section 1.4: Exercise 24 (a) (c)\\
+%Translate each of these nested quantifications into an En- glish statement that expresses a mathematical fact. The domain in each case consists of all real numbers.
+%a)$\forall x\exists y(x + y = y)$
+%a)  SomeoneinyourclasscanspeakHindi.
+%c) There is a person in your class who was not born in
+%California.
+%c)$\exists x \exists y(((x \leq l$
+Translate in two ways each of these statements into logical expressions using predicates, quantifiers, and logical connectives. First, let the domain consist of the students in your class and second, let it consist of all people.\\
+a) Everyone in your class has a cellular phone.\\
+c) There is a person in your class who cannot swim.\\
+\item Rosen, Section 1.4: Exercise 46 (b)\\
+Establish these logical equivalences, where x does not occur as a free variable in A. Assume that the domain is nonempty.\\
+b)$ (\exists x P(x))\lor A \equiv \exists x(P(x) \lor A)$\\
 \item Are $\forall x(P(x)\to Q(x))$and$\forall xP(x)\to Q(x)$logically equivalent?If yes, give a proof. If no, give a counterexample.
 \item Rosen, Section 1.5: Exercise 10 (a) (d)
-\item Rosen, Section 1.5: Exercise 12 (i) (n)
-\item Rosen, Section 1.5: Exercise 36 (d)
-\item Lehman et al. Problem 3.32
-\item  Define predicates and prove the following using the appropriate rules of
-inference:
+Let $F(x, y)$ be the statement “$x$ can fool $y$,” where the domain consists of all people in the world. Use quantifiers to express each of these statements.\\
+a) Everybody can fool Fred.\\ 
+d) There is no one who can fool everybody.
+\item Rosen, Section 1.5: Exercise 12 (i) (n)\\
+Let $I(x)$ be the statement ``$x$ has an Internet connection'' and $C(x,y)$ be the statement ``$x$ and $y$ have chatted over the Internet,'' where the domain for the variables $x$ and $y$ consists of all students in your class. Use quantifiers to express each of these statements.\\
+i) Everyone except one student in your class has an Internet connection.\\
+n) There are at least two students in your class who have not chatted with the same person in your class.\\
+\item Rosen, Section 1.5: Exercise 36 (d)\\
+Express each of these statements using quantifiers. Then form the negation of the statement so that no negation is to the left of a quantifier. Next, express the negation in simple English. (Do not simply use the phrase ``It is not the case that.'')\\
+d) Some student has solved every exercise in this book.
+\item Lehman et al. Problem 3.32\\
+Some students from a large class will be lined up left to right. There will be at least two stduents in the line. Translate each of the following assertions into predicate formulas with the set of students in the class as the domain of discourse. The only predicates you may use are
+\begin{itemize}
+\item equality and,
+\item $F(x, y)$, meaning that ``x is somewhere to the left of y in the line.'' For example, in the line ``CDA'' both $F(C,A)$ and $F(C,D)$ are true. Once you have defined a formula for $a$ predicate $P$ you may use the abbreviation ``P'' in further formulas.
+\end{itemize}
+\begin{enumerate}
+\item Student $x$ is in the line.\\
+\item Student $x$ is first in line.\\
+\item Student $x$ is immediately to the right of student y.\\
+\item Student $x$ is second.\\
+\end{enumerate}
+ \item  Define predicates and prove the following using the appropriate rules of inference:
 \begin{enumerate}
     \item Beth, an ISU student, visited Brazil this summer. Everyone who visited Brazil this summer watched the World Cup. Therefore, an ISU student watched the World Cup.
     \item Some music majors are also computer science majors. Every music major can play the piano. There is a computer science major who can play the piano.
 \end{enumerate}
-\item Consider the following argument:
+\item Consider the following argument:\\
 \begin{itshape}
 Every computer science major takes discrete mathematics. Anyone who takes discrete mathematics understands logic. No one who understands logic will lose arguments. Therefore, no computer science majors will lose arguments.
 \end{itshape}
